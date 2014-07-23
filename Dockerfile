@@ -19,6 +19,7 @@ RUN echo "listen_addresses = '*'" >> /etc/postgresql/9.3/main/postgresql.conf
 RUN echo "port = 5432" >> /etc/postgresql/9.3/main/postgresql.conf
 
 EXPOSE 5432
+EXPOSE 22
 
 ADD start.sh /start.sh
 RUN chmod 0755 /start.sh
